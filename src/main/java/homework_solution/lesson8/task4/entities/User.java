@@ -28,4 +28,13 @@ public class User extends Entity {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "jobTitle='" + jobTitle + '\'' +
+                ", uuid=" + uuid +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

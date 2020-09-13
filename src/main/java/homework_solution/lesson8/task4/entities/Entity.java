@@ -3,19 +3,19 @@ package homework_solution.lesson8.task4.entities;
 import homework_solution.lesson8.task4.validator.ValidatorStub;
 
 public abstract class Entity implements Validatable {
-    protected Long id;
+    protected String uuid;
     protected String name;
 
     public Entity(String name) {
         this.name = name;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public String getUuid() {
+        return uuid;
     }
 
-    public Long getId() {
-        return id;
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
     }
 
     @Override

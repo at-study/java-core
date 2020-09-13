@@ -30,4 +30,12 @@ public class Branch extends Entity {
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "Branch{" +
+                "address='" + address + '\'' +
+                ", uuid=" + uuid +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

@@ -27,4 +27,13 @@ public class Client extends Entity{
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "address='" + address + '\'' +
+                ", uuid=" + uuid +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
