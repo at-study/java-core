@@ -12,7 +12,7 @@ public class Square {
 
 
     float getSquare(int radius) {
-        float Pi = 3.14f;
-        return Pi * radius * radius;
+        float pi = 3.14f;
+        return pi * radius * radius;
     }
 }
