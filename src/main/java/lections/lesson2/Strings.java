@@ -41,6 +41,14 @@ public class Strings {
         boolean matches = passport.matches("^(\\d{4} \\d{6})$");
         System.out.println(matches);
 
+        // String.valueOf()
+        boolean x = false;
+        String xString = String.valueOf(x);
+        String intString = String.valueOf(15);
+        System.out.println(xString);
+
+
+
     }
 
     double getSquare(int radius) {
