@@ -22,16 +22,24 @@ public class InvertBy2 {
 
         // Переменная для инвертирования. Как только дойдем до элемента 2, поменяем на значение 1.
         int inverse = 0;
-
+        boolean was2 = false;
         int[][] destMatrix = new int[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (sourceMatrix[i][j] == 2) {
                     destMatrix[i][j] = 2;
                     inverse = 1;
+                    was2 = true;
                     continue;
-                }
-                destMatrix[i][j] = (sourceMatrix[i][j] + inverse) % 2;
+                } else
+                    destMatrix[i][j] = was2
+                            ? (sourceMatrix[i][j] + 1) % 2
+                            : sourceMatrix[i][j];
+                //destMatrix[i][j] = (sourceMatrix[i][j] + inverse) % 2;
+
+                // Элементы исходной матрицы: 0 или 1
+                // До двойки: 0 или 1
+                // После двойки 1 или 0
             }
         }
 

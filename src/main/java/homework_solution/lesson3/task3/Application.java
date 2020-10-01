@@ -16,9 +16,19 @@ public class Application {
 
         Human[] grands = new Human[4];
         int index = 0;
+
+        /* Изменение на лекции
         for (Human parent : elena.parents) {
             for (Human grand : parent.parents)
                 grands[index++] = grand;
+        }
+        */
+
+        for (int i = 0; i < elena.parents.length; i++) {
+            Human[] parentParents = elena.parents[i].parents;
+            for (int j = 0; j < parentParents.length; j++) {
+                grands[index++] = parentParents[j];
+            }
         }
 
         for (Human grand : grands) {

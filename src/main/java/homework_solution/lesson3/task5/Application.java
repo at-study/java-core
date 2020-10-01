@@ -3,7 +3,7 @@ package homework_solution.lesson3.task5;
 public class Application {
 
     public static void main(String[] args) {
-        Human[] humans = new Human[10];
+        Human[] humans = new Human[20];
         for (int i = 0; i < humans.length; i++) {
             humans[i] = new Human();
         }

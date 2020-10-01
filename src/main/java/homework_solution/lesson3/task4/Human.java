@@ -1,8 +1,11 @@
 package homework_solution.lesson3.task4;
 
+import java.util.Arrays;
+
 public class Human {
     String name;
     Human[] friends = new Human[3];
+    Human[] newFriends = new Human[0];
 
     Human(String name) {
         this.name = name;
@@ -21,5 +24,18 @@ public class Human {
         }
         friends[index] = friend;
         friend.addFriend(this);
+    }
+
+
+    // Добавлено на лекции
+    void addNewFriend(Human friend) {
+        for (Human currentFriend : newFriends) {
+            if (currentFriend == friend)
+                return;
+        }
+        int currentCount = newFriends.length;
+        newFriends = Arrays.copyOf(newFriends, currentCount + 1);
+        newFriends[currentCount] = friend;
+        friend.addNewFriend(this);
     }
 }
