@@ -1,15 +1,25 @@
 package tests;
 
-import java.util.Arrays;
+import org.junit.jupiter.api.Test;
 
-public class Debug {
+import java.util.Date;
+import java.util.regex.Pattern;
 
-    public void debugTest() {
-        int NOT_NULL_COUNT = 2;
+class Debug {
 
-        Integer[] ints = {1, 3, null, null};
-        Integer[] notNullInts = Arrays.copyOf(ints, NOT_NULL_COUNT);
+    @Test
+    void debugTest() {
 
-        System.out.println();
+        boolean stringMatches = "строка".matches("[а-я]{6}");
+
+        boolean stringMatches1 = Pattern.matches("[а-я]{6}", "строка");
+
+        System.out.println(stringMatches);
+        System.out.println(stringMatches1);
+
+        Date date1 = new Date();
+        Date date2 = new Date();
+       // boolean result = date1 > date2;
+
     }
 }

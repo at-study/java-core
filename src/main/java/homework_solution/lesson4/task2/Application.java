@@ -32,6 +32,7 @@ public class Application {
             if (!isHumanValid) continue;
 
             humans[index++] = human;
+
             boolean isArrayFull = Validator.validateHumanArray(humans);
             if (isArrayFull) break;
         }
