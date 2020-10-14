@@ -2,13 +2,13 @@ package lections.lesson3;
 
 public class Cat {
 
-    String name;
+    public String name;
     int age;
     int catNumber;
 
     static int count = 0;
 
-    Cat() {
+    public Cat() {
         name = "Безымянный кот";
         age = 5;
         catNumber = ++count;
