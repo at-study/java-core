@@ -2,6 +2,8 @@ package tests;
 
 import org.junit.jupiter.api.Test;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Date;
 import java.util.regex.Pattern;
 
@@ -21,5 +23,7 @@ class Debug {
         Date date2 = new Date();
        // boolean result = date1 > date2;
 
+        Path path = Paths.get("D:\\1.txt");
+        path.getFileSystem();
     }
 }
