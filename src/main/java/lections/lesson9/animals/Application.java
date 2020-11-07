@@ -9,7 +9,7 @@ public class Application {
 
         if (cat3 instanceof HomeAnimal)
             ((HomeAnimal) cat3).getName();
-        //((WildAnimal) cat3);
+        //((HomeAnimal) cat3);
 
         Animal lion = new Lion();
         System.out.println(lion instanceof Animal);

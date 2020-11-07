@@ -1,0 +1,15 @@
+{
+  "symbolAmounts": [
+    {
+      "amount": "43000.00",
+      "cashSymbol": {
+        "id": 40,
+        "version": null,
+        "code": "80",
+        "name": "Поступления наличных денег через банкоматы кредитных организаций",
+        "isExpense": null,
+        "weight": null
+      }
+    }
+  ]
+}
