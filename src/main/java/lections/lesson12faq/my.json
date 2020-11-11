@@ -1,0 +1,3 @@
+{
+  "param": "<div class=\"stage-wrapper\">\n<div class=\"duration\">\n<span style=\"font-size: 1.0063451627463875em; opacity: 0.5063451627463875;\">57s</span>\n</div>\n<div cbwf-controller=\"stage-actions-popover\" descurl=\"/job/at-cashbox/451/execution/node/22/wfapi/describe\" notif=\"stage-actions-popover,stage-failed-popover\" caption=\"Success\" class=\"cbwf-widget cbwf-controller-applied stage-actions-popover\"></div>\n<div class=\"extension-dock\"></div>\n</div>"
+}
