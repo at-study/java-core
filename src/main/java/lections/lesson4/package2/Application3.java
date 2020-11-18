@@ -8,7 +8,7 @@ public class Application3 {
         Application instance = new Application();
         // instance.c; <-- Поля default недоступны из других пакетов.
 
-        //Application.defaultMethod(); Метод default надоступен из других пакетов.
+        //UnaryApplication.defaultMethod(); Метод default надоступен из других пакетов.
     }
 
 }

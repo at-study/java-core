@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Application {
 
     public static void main(String[] args) {
-        File file = new File("src\\main\\java\\lections\\lesson10\\file\\Application.java");
+        File file = new File("src\\main\\java\\lections\\lesson10\\file\\UnaryApplication.java");
         File file2 = new File("src\\main\\java\\lections\\lesson10\\file\\Output.txt");
         File directory = new File("src\\main\\java\\lections\\lesson10\\file");
 
@@ -36,7 +36,7 @@ public class Application {
 
 
 /*
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src\\main\\java\\lections\\lesson10\\files\\Application.java")));
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src\\main\\java\\lections\\lesson10\\files\\UnaryApplication.java")));
         String line = reader.readLine();
         System.out.println(line);
 

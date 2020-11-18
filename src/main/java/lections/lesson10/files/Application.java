@@ -9,7 +9,7 @@ import java.util.List;
 public class Application {
 
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("src\\main\\java\\lections\\lesson10\\files\\Application.java");
+        Path path = Paths.get("src\\main\\java\\lections\\lesson10\\files\\UnaryApplication.java");
 
         List<String> content = Files.readAllLines(path);
         for (String string: content)

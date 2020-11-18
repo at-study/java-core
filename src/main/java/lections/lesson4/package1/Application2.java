@@ -4,8 +4,8 @@ public class Application2 {
 
     private static void privateMethod3() {
         System.out.println("Приватный метод-3");
-        // Application.privateMethod(); <-- Приватные методы других классов недоступны.
-        // Application.privateMethod2();
+        // UnaryApplication.privateMethod(); <-- Приватные методы других классов недоступны.
+        // UnaryApplication.privateMethod2();
 
         Application.publicMethod(); // <-- Публичные методы видны везде.
 
