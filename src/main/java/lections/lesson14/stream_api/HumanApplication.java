@@ -8,7 +8,7 @@ import java.util.List;
 public class HumanApplication {
 
     public static void main(String[] args) {
-        List<Person> persons = JsonHelper.getPersonsFromFile("src/main/java/homework_task/lesson14/dataset.json").subList(0, 500);
+        List<Person> persons = JsonHelper.getPersonsFromFile("src/main/java/homework_task/lesson14/dataset.json");
 
         // Сортируем по фамилии
         // Если фамилии одинаковые
